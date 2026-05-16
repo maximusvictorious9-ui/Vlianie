@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Влияние интернета на подростков</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #fdfdfd;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #a0c4ff;
+            color: #003566;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 4px solid #90e0ef;
+        }
+
+        header .lang-buttons {
+            margin-top: 10px;
+        }
+
+        .lang-buttons button {
+            background-color: #90e0ef;
+            color: #003566;
+            border: none;
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .lang-buttons button:hover {
+            background-color: #caf0f8;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            max-width: 1400px;
+            margin: auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .content {
+            flex: 1;
+            max-width: 900px;
+        }
+
+        aside {
+            width: 250px;
+            padding: 15px;
+            background-color: #e3f2fd;
+            border-radius: 10px;
+            flex-shrink: 0;
+        }
+
+        section {
+            padding: 20px;
+            background-color: #fff9f9;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(160, 196, 255, 0.2);
+        }
+
+        h2 {
+            color: #0077b6;
+            border-bottom: 2px solid #90e0ef;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        table th, table td {
+            border: 1px solid #c0c0c0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #caf0f8;
+        }
+
+        .note {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-left: 4px solid #00b4d8;
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .images img {
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #a0c4ff;
+            color: #003566;
+            font-size: 14px;
+            border-top: 4px solid #90e0ef;
+        }
+
+        a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        aside h3 {
+            margin-top: 0;
+            color: #0077b6;
+        }
+
+        aside p {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 data-ru="Влияние интернет-информационного поля на подростков" 
+        data-ro="Influența mediului informațional online asupra adolescenților">
+        Влияние интернет-информационного поля на подростков стран
+    </h1>
+    <p data-ru="Возможности развития и риски для психоэмоционального состояния (2020–2025)" 
+       data-ro="Oportunități de dezvoltare și riscuri pentru starea psiho-emoțională (2020–2025)">
+        Возможности развития и риски для психоэмоционального состояния (2020–2025)
+    </p>
+    <div class="lang-buttons">
+        <button onclick="setLang('ru')">Русский</button>
+        <button onclick="setLang('ro')">Română</button>
+    </div>
+</header>
+
+<div class="container">
+    <aside>
+        <h3 data-ru="Совет дня" data-ro="Sfaturi de zi">Совет дня</h3>
+        <p data-ru="Старайся проводить не более 2 часов в социальных сетях в день." 
+           data-ro="Încercați să nu petreceți mai mult de 2 ore pe rețelele sociale pe zi.">
+            Старайся проводить не более 2 часов в социальных сетях в день.
+        </p>
+        <h3 data-ru="Факт" data-ro="Fapt">Факт</h3>
+        <p data-ru="98% подростков  используют интернет регулярно." 
+           data-ro="98% dintre adolescenții folosesc internetul regulat.">
+            98% подростков используют интернет регулярно.
+        </p>
+        <h3 data-ru="Совет" data-ro="Sfat">Совет</h3>
+        <p data-ru="Каждые 45 минут делайте небольшой перерыв от экрана." 
+           data-ro="Faceți o pauză de 5 minute la fiecare 45 de minute de ecran.">
+            Каждые 45 минут делайте небольшой перерыв от экрана.
+        </p>
+    </aside>
+
+    <div class="content">
+        <!-- Глава 1 -->
+        <section>
+            <h2 data-ru="Глава 1. Цель и гипотеза исследования" data-ro="Capitolul 1. Scopul și ipoteza cercetării">
+                Глава 1. Цель и гипотеза исследования
+            </h2>
+            <p data-ru="<strong>Цель проекта:</strong> Проанализировать влияние интернет-информационного поля на подростков стран, выявив положительные и отрицательные стороны на основе статистических данных за 2020–2025 годы."
+               data-ro="<strong>Scopul proiectului:</strong> A analiza influența mediului informațional online asupra adolescenților, evidențiind părțile pozitive și negative pe baza datelor statistice din 2020–2025.">
+                <strong>Цель проекта:</strong> Проанализировать влияние интернет-информационного поля на подростков стран, выявив положительные и отрицательные стороны на основе статистических данных за 2020–2025 годы.
+            </p>
+            <p data-ru="<strong>Гипотеза:</strong> чем раньше и дольше подросток вовлечён в интернет-среду, тем сильнее её влияние на его повседневную жизнь, наряду с расширением образовательных и коммуникативных возможностей повышается риск тревожности, снижения концентрации и цифровой зависимости."
+               data-ro="<strong>Ipoteza:</strong> cu cât adolescentul este implicat mai devreme și mai mult în mediul online, cu atât influența asupra vieții sale cotidiene este mai puternică, iar pe lângă extinderea oportunităților educaționale și de comunicare, crește riscul de anxietate, scădere a concentrării și dependență digitală.">
+                <strong>Гипотеза:</strong> чем раньше и дольше подросток вовлечён в интернет-среду, тем сильнее её влияние на его повседневную жизнь, наряду с расширением образовательных и коммуникативных возможностей повышается риск тревожности, снижения концентрации и цифровой зависимости.
+            </p>
+        </section>
+
+        <!-- Глава 2 -->
+        <section>
+            <h2 data-ru="Глава 2. Уровень вовлечённости и цели использования интернета" 
+                data-ro="Capitolul 2. Nivelul de implicare și scopurile utilizării internetului">
+                Глава 2. Уровень вовлечённости и цели использования интернета
+            </h2>
+
+            <p data-ru="Подростки активно используют интернет. Большинство используют его для развлечений, общения и учёбы. Таблицы ниже показывают процент вовлечённых подростков по времени и по целям использования."
+               data-ro="Adolescenții folosesc activ internetul. Majoritatea îl folosesc pentru divertisment, comunicare și studiu. Tabelele de mai jos arată procentul de adolescenți implicați după timp și scopuri.">
+                Подростки активно используют интернет. Большинство используют его для развлечений, общения и учёбы. Таблицы ниже показывают процент вовлечённых подростков по времени и по целям использования.
+            </p>
+
+            <h3 data-ru="Уровень вовлечённости" data-ro="Nivelul de implicare">Уровень вовлечённости</h3>
+            <table>
+                <tr>
+                    <th data-ru="Показатель" data-ro="Indicator">Показатель</th>
+                    <th data-ru="Процент" data-ro="Procent">Процент</th>
+                </tr>
+                <tr>
+                    <td data-ru="Подростки, регулярно использующие интернет" data-ro="Adolescenți care folosesc internetul regulat">Подростки, регулярно использующие интернет</td>
+                    <td>98%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Проводят в интернете 6–8 часов в день" data-ro="Petrec 6–8 ore online pe zi">Проводят в интернете 6–8 часов в день</td>
+                    <td>36%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Проводят в интернете более 8 часов" data-ro="Petrec mai mult de 8 ore online">Проводят в интернете более 8 часов</td>
+                    <td>17%</td>
+                </tr>
+            </table>
+
+            <h3 data-ru="Цели использования интернета" data-ro="Scopurile utilizării internetului">Цели использования интернета</h3>
+            <table>
+                <tr>
+                    <th data-ru="Цель" data-ro="Scop">Цель</th>
+                    <th data-ru="Процент подростков" data-ro="Procentul adolescenților">Процент подростков</th>
+                </tr>
+                <tr>
+                    <td data-ru="Развлекательный контент (видео)" data-ro="Conținut de divertisment (video)">Развлекательный контент (видео)</td>
+                    <td>98%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Общение (мессенджеры, соцсети)" data-ro="Comunicare (mesagerie, rețele sociale)">Общение (мессенджеры, соцсети)</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Учёба и поиск информации" data-ro="Studiu și căutare informații">Учёба и поиск информации</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Социальные сети" data-ro="Rețele sociale">Социальные сети</td>
+                    <td>78%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Цифровое творчество" data-ro="Creativitate digitală">Цифровое творчество</td>
+                    <td>24%</td>
+                </tr>
+            </table>
+            <div class="note" data-ru="Подростки могут использовать интернет одновременно для нескольких целей."
+                 data-ro="Adolescenții pot folosi internetul pentru mai multe scopuri simultan.">
+                Подростки могут использовать интернет одновременно для нескольких целей.
+            </div>
+        </section>
+
+        <!-- Глава 3 -->
+        <section>
+            <h2 data-ru="Глава 3. Негативные последствия и выводы" data-ro="Capitolul 3. Consecințe negative și concluzii">
+                Глава 3. Негативные последствия и выводы
+            </h2>
+
+            <p data-ru="Чрезмерное использование интернета связано с рядом психоэмоциональных рисков: тревожность, снижение концентрации, нарушение сна и признаки цифровой зависимости."
+               data-ro="Utilizarea excesivă a internetului este asociată cu mai mulți factori de risc psiho-emoțional: anxietate, scăderea concentrării, tulburarea somnului și semne de dependență digitală.">
+                Чрезмерное использование интернета связано с рядом психоэмоциональных рисков: тревожность, снижение концентрации, нарушение сна и признаки цифровой зависимости.
+            </p>
+
+            <table>
+                <tr>
+                    <th data-ru="Фактор риска" data-ro="Factor de risc">Фактор риска</th>
+                    <th data-ru="Процент" data-ro="Procent">Процент</th>
+                </tr>
+                <tr>
+                    <td data-ru="Более 4 часов в соцсетях ежедневно" data-ro="Peste 4 ore în rețele sociale zilnic">Более 4 часов в соцсетях ежедневно</td>
+                    <td>78%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Тревожность и ухудшение настроения" data-ro="Anxietate și dispoziție scăzută">Тревожность и ухудшение настроения</td>
+                    <td>54%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Признаки цифровой зависимости" data-ro="Semne de dependență digitală">Признаки цифровой зависимости</td>
+                    <td>35%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Снижение концентрации" data-ro="Scăderea concentrării">Снижение концентрации</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td data-ru="Нарушение режима сна" data-ro="Tulburarea somnului">Нарушение режима сна</td>
+                    <td>45%</td>
+                </tr>
+            </table>
+
+            <h3 data-ru="Влияние интернета на подростков" data-ro="Impactul internetului asupra adolescenților">Примеры подростков</h3>
+           <div class="video">
+    <iframe 
+        src="Опасный тренд среди подростков.mp4"
+        title="Экстремистские действия подростков"
+        allowfullscreen>
+    </iframe>
+     <iframe 
+        src="румтур после.mp4"
+        title="Экстремистские действия подростков"
+        allowfullscreen>
+    </iframe>
+    <img src="https://xn----dtbhvcrdbcoh1a.xn--p1ai/wp-content/uploads/2023/10/deti-internet-768x479.png">
+</div>
+            <div class="note" data-ru="Эти изображения иллюстрируют тему интернет-активности подростков и не являются диагностическими."
+                 data-ro="Aceste imagini ilustrează tema activității online a adolescenților și nu sunt diagnostice.">
+                Эти изображения иллюстрируют тему интернет-активности подростков и не являются диагностическими.
+            </div>
+            <h3 data-ru="Выводы" data-ro="Concluzii">Выводы</h3>
+            <p data-ru="Интернет оказывает комплексное влияние на подростков. Он способствует обучению, общению и самореализации, однако при чрезмерном использовании повышает риск психоэмоциональных нарушений. Полученные данные подтверждают гипотезу о двойственном характере влияния интернета."
+               data-ro="Internetul are un impact complex asupra adolescenților. Contribuie la educație, comunicare și auto-realizare, însă utilizarea excesivă crește riscul de tulburări psiho-emoționale. Datele obținute confirmă ipoteza despre caracterul dual al influenței internetului.">
+                Интернет оказывает комплексное влияние на подростков. Он способствует обучению, общению и самореализации, однако при чрезмерном использовании повышает риск психоэмоциональных нарушений. Полученные данные подтверждают гипотезу о двойственном характере влияния интернета.
+            </p>
+        </section>
+        <section>
+    <h2>Источники</h2>
+    <ul>
+        <li><a href="https://www.rbc.ru/technology_and_media/01/03/2025/67c1b67a9a7947a146b068c3" target="_blank">РБК. Использование интернета детьми и подростками в России, 2025</a></li>
+        <li><a href="https://rg.ru/2025/06/02/bolee-treti-rossijskih-detej-provodiat-v-internete-do-8-chasov-v-den.html" target="_blank">Российская газета. Время пребывания детей в интернете, 2025</a></li>
+        <li><a href="https://grodnolen.gov.by/dlya-chego-deti-ispolzuyut-internet-rasskazali-v-belstate" target="_blank">Белстат. Использование интернета детьми в Беларуси, 2024</a></li>
+        <li><a href="https://www.researchgate.net/publication/387251229_Analiz_vliania_socialnyh_setej_na_sovremennyh_podrostkov_Analysis_of_the_impact_of_social_networks_on_modern_teenagers" target="_blank">Научные исследования по цифровой зависимости подростков, 2020–2025</a></li>
+    </ul>
+</section>
+        <footer>
+Учебный проект • влияние интернета на подростков • 2020–2025
+</footer>
+    </div>
+    <aside>
+        <h3 data-ru="Интересный факт" data-ro="Fapt interesant">Интересный факт</h3>
+        <p data-ru="Согласно статистике, 36% подростков проводят 6–8 часов в день онлайн." 
+           data-ro="Conform statisticilor, 36% dintre adolescenți petrec 6–8 ore pe zi online.">
+            Согласно статистике, 36% подростков проводят 6–8 часов в день онлайн.
+        </p>
+        <h3 data-ru="Совет" data-ro="Sfat">Совет</h3>
+        <p data-ru="Используйте интернет для творчества и учебы, а не только для развлечений." 
+           data-ro="Folosiți internetul pentru creativitate și studiu, nu doar pentru divertisment.">
+            Используйте интернет для творчества и учебы, а не только для развлечений.
+        </p>
+        <h3 data-ru="Факт" data-ro="Fapt">Факт</h3>
+        <p data-ru="Проводя больше 8 часов онлайн, подростки чаще испытывают снижение концентрации"
+        data-ro="Adolescenții sunt mai predispuși să experimenteze o scădere a concentrării după ce petrec mai mult de 8 ore online.">
+        Проводя больше 8 часов онлайн, подростки чаще испытывают снижение концентрации
+    </p>
+        </aside>
+
+<script>
+    function setLang(lang) {
+        document.querySelectorAll('[data-ru]').forEach(el => {
+            if(lang === 'ru') el.innerHTML = el.getAttribute('data-ru');
+            if(lang === 'ro') el.innerHTML = el.getAttribute('data-ro');
+        });
+    }
+</script>
+
+</body>
+</html>
